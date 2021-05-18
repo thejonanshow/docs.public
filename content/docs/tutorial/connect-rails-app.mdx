@@ -31,20 +31,8 @@ cd blog
 
 3. Let's add some gems to our Gemfile: 
 
-- Update your source Gemfile by running the following command from the blog directory: 
 ```bash
-blog$ vim Gemfile 
-```
-
-- Add the following requirements in your Gemfile: 
-```ruby
-gem "planetscale"
-gem "mysql2"
-```
-
-4. Now we need to install our Gemfile dependencies:
-```bash
-blog$ bundle exec bundle install
+blog$ bundle add planetscale mysql2
 ```
 
 At this point, we have accomplished two things: we've created a rails project called _blog_ and installed the libraries that we'll need to connect to our PlanetScale database. Now it’s time to create a PlanetScale Database.
